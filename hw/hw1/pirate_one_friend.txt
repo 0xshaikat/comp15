@@ -1,0 +1,697 @@
+1 john alexander: 0 Smee
+2 algerine pirates: 0 Smee
+3 ali basha: 0 Smee
+4 captain alleston: 0 Smee
+5 alwilda: 0 Smee
+6 alexander ammand: 0 Smee
+7 ibrahim ameer: 0 Smee
+8 captain cornelius anderson: 0 Smee
+9 captain androeas: 0 Smee
+10 sultan of timor angora: 0 Smee
+11 angria: 0 Smee
+12 captain thomas anstis: 0 Smee
+13 antonio: 0 Smee
+14 john rose archer: 0 Smee
+15 james austin: 0 Smee
+16 captain john avery: 0 Smee
+17 captain bridgeman: 0 Smee
+18 captain aylett: 0 Smee
+19 job baily: 0 Smee
+20 captain baker: 0 Smee
+21 roger ball: 0 Smee
+22 john ballet: 0 Smee
+23 captain baltizar: 0 Smee
+24 captain bannister: 0 Smee
+25 barbarosa: 0 Smee
+26 redbeard: 0 Smee
+27 captain nicholas barbe: 0 Smee
+28 captain barnard: 0 Smee
+29 captain barnes: 0 Smee
+30 henry barnes: 0 Smee
+31 james barrow: 0 Smee
+32 captain charles bellamy: 0 Smee
+33 james belvin: 0 Smee
+34 francis beme: 0 Smee
+35 vincent benavides: 0 Smee
+36 george bendall: 0 Smee
+37 william bennett: 0 Smee
+38 philip bill: 0 Smee
+39 bishop: 0 Smee
+40 captain bishop: 0 Smee
+41 william bishop: 0 Smee
+42 blackbeard: 0 Smee
+43 william blads: 0 Smee
+44 benjamin blake: 0 Smee
+45 james blake: 0 Smee
+46 captain blewfield: 0 Smee
+47 captain blot: 0 Smee
+48 lieutenant boliviar: 0 Smee
+49 bonavides: 0 Smee
+50 captain bond: 0 Smee
+51 bonnet: 0 Smee
+52 anne bonny: 0 Smee
+53 john boon: 0 Smee
+54 samuel booth: 0 Smee
+55 captain bourano: 0 Smee
+56 captain oliver la bouse: 0 Smee
+57 dowen: 0 Smee
+58 captain john bowen: 0 Smee
+59 william bowman: 0 Smee
+60 robert boyd: 0 Smee
+61 boyza: 0 Smee
+62 captain joseph bradish: 0 Smee
+63 george bradley: 0 Smee
+64 captain hiram breakes: 0 Smee
+65 john breck: 0 Smee
+66 captain breh: 0 Smee
+67 captain brenningham: 0 Smee
+68 john brierly: 0 Smee
+69 john bright: 0 Smee
+70 james brinkley: 0 Smee
+71 captain joseph brodley: 0 Smee
+72 joseph brooks (senior): 0 Smee
+73 joseph brooks (junior): 0 Smee
+74 captain brown: 0 Smee
+75 captain brown: 0 Smee
+76 captain nicholas brown: 0 Smee
+77 john brown: 0 Smee
+78 captain james browne: 0 Smee
+79 edward browne: 0 Smee
+80 john browne (mamme): 0 Smee
+81 surgeon richard browne: 0 Smee
+82 eleazer buck: 0 Smee
+83 captain buckenham: 0 Smee
+84 captain dixey bull: 0 Smee
+85 mr. bull: 0 Smee
+86 surgeon bullocj: 0 Smee
+87 charles bunce: 0 Smee
+88 william burder: 0 Smee
+89 captain samuel south burgess: 0 Smee
+90 captain thomas burgess: 0 Smee
+91 captain burk: 0 Smee
+92 captain cachemaree: 0 Smee
+93 caesar: 0 Smee
+94 captain  caesar: 0 Smee
+95 captain john calles (callis): 0 Smee
+96 william cammock: 0 Smee
+97 ralph candor: 0 Smee
+98 cannis or cannis marcy: 0 Smee
+99 signor caraccioli (d'aubigny): 0 Smee
+100 thomas carman: 0 Smee
+101 john carnes: 0 Smee
+102 john carr: 0 Smee
+103 dennis carter: 0 Smee
+104 john carter: 0 Smee
+105 castilio: 0 Smee
+106 la cata: 0 Smee
+107 henry chan: 0 Smee
+108 edward cheesman: 0 Smee
+109 daniel chevalle: 0 Smee
+110 thomas child: 0 Smee
+111 mistress ching: 0 Smee
+112 captain christian: 0 Smee
+113 daniel chuly: 0 Smee
+114 charles church: 0 Smee
+115 edward church: 0 Smee
+116 william church: 0 Smee
+117 john churchill: 0 Smee
+118 jonathan clarke: 0 Smee
+119 richard clarke (jafar): 0 Smee
+120 robert clarke: 0 Smee
+121 john clifford: 0 Smee
+122 captain clinton: 0 Smee
+123 captain cobham: 0 Smee
+124 maria cobham: 0 Smee
+125 captain thomas cocklyn: 0 Smee
+126 captain cofrecina: 0 Smee
+127 captain john cole: 0 Smee
+128 samuel cole: 0 Smee
+129 captain edward collier: 0 Smee
+130 thomas collins: 0 Smee
+131 adam comry: 0 Smee
+132 captain condent: 0 Smee
+133 captain cook: 0 Smee
+134 george cook: 0 Smee
+135 william cook: 0 Smee
+136 captain john cooke: 0 Smee
+137 captain cooper: 0 Smee
+138 captain cooper: 0 Smee
+139 captain corbet: 0 Smee
+140 captain cornelius: 0 Smee
+141 stephen james de cossey: 0 Smee
+142 william coward: 0 Smee
+143 captain c. cowley: 0 Smee
+144 captain john cox: 0 Smee
+145 captain john coxon: 0 Smee
+146 captain richard coyle: 0 Smee
+147 captain crackers: 0 Smee
+148 captain john criss: 0 Smee
+149 andrew cullen: 0 Smee
+150 pierce cullen: 0 Smee
+151 captain culliford: 0 Smee
+152 george cumberland: 0 Smee
+153 captain william chnningham: 0 Smee
+154 patrick cunningham: 0 Smee
+155 joseph curtice: 0 Smee
+156 captain william dampier: 0 Smee
+157 joseph dan: 0 Smee
+158 captain daniel: 0 Smee
+159 stephen daniel: 0 Smee
+160 captain dansker: 0 Smee
+161 john darby: 0 Smee
+162 captain edward davis: 0 Smee
+163 captain howel davis: 0 Smee
+164 gabriel davis: 0 Smee
+165 william davis: 0 Smee
+166 corsair dawes: 0 Smee
+167 robert dawes: 0 Smee
+168 joseph dawson: 0 Smee
+169 captain robert deal: 0 Smee
+170 captain john deane: 0 Smee
+171 le capitaine dedran: 0 Smee
+172 richard deigle: 0 Smee
+173 captain delander: 0 Smee
+174 delizuff: 0 Smee
+175 jonathan delve: 0 Smee
+176 captain dempster: 0 Smee
+177 henry dennis: 0 Smee
+178 captain john derdrake: 0 Smee
+179 captain george dew: 0 Smee
+180 diabolito: 0 Smee
+181 diego: 0 Smee
+182 henry dipper: 0 Smee
+183 francis dole: 0 Smee
+184 john dorothy: 0 Smee
+185 doctor thomas dover: 0 Smee
+186 captain william dowling: 0 Smee
+187 dragut: 0 Smee
+188 sir francis drake: 0 Smee
+189 peter dromyowe: 0 Smee
+190 drummond: 0 Smee
+191 nicholas dunbar: 0 Smee
+192 george dunkin: 0 Smee
+193 william dunn: 0 Smee
+194 captain dunton: 0 Smee
+195 captain easton: 0 Smee
+196 captain peter easton: 0 Smee
+197 edward eaton: 0 Smee
+198 echlin: 0 Smee
+199 william eddy: 0 Smee
+200 captain england: 0 Smee
+201 emanuel ernados: 0 Smee
+202 adolf esmit: 0 Smee
+203 captain cornelius essex: 0 Smee
+204 domingo eucalla: 0 Smee
+205 captain john evans: 0 Smee
+206 captain jacob everson: 0 Smee
+207 alexander olivier exquemelin: 0 Smee
+208 john fall: 0 Smee
+209 thomas farrington: 0 Smee
+210 captain john fenn: 0 Smee
+211 lewis ferdinando: 0 Smee
+212 thomas fern: 0 Smee
+213 william fernon: 0 Smee
+214 captain james fife: 0 Smee
+215 john fillmore: 0 Smee
+216 john fitzerrald: 0 Smee
+217 captain fleming: 0 Smee
+218 john fletcher: 0 Smee
+219 captain william fly: 0 Smee
+220 william forrest: 0 Smee
+221 edward forseith: 0 Smee
+222 foster: 0 Smee
+223 charles franklyn: 0 Smee
+224 mathew freebarn: 0 Smee
+225 william frogge: 0 Smee
+226 anne fulworth: 0 Smee
+227 garcia: 0 Smee
+228 gardiner: 0 Smee
+229 captain jose gaspar: 0 Smee
+230 thomas gates: 0 Smee
+231 francois gautier: 0 Smee
+232 george gayny: 0 Smee
+233 captain gennings: 0 Smee
+234 thomas gerrard: 0 Smee
+235 garrat gibbens: 0 Smee
+236 charles gibbs: 0 Smee
+237 paul giddens: 0 Smee
+238 john giddings: 0 Smee
+239 captain gilbert: 0 Smee
+240 captain james gillam (kelly): 0 Smee
+241 john gills: 0 Smee
+242 harry glasby: 0 Smee
+243 master godekins: 0 Smee
+244 christopher goffe: 0 Smee
+245 captain thomas goldsmith: 0 Smee
+246 john gomez: 0 Smee
+247 panther key john: 0 Smee
+248 john goodale: 0 Smee
+249 captain goodly: 0 Smee
+250 captain nathaniel gordon: 0 Smee
+251 cuthbert goss: 0 Smee
+252 captain john gow: 0 Smee
+253 le capitaine laurens de graff: 0 Smee
+254 captain graham: 0 Smee
+255 grambo: 0 Smee
+256 sieur de grammont: 0 Smee
+257 piere le grand: 0 Smee
+258 roger grange: 0 Smee
+259 captain herbert de graves: 0 Smee
+260 captain red legs: 0 Smee
+261 richard greensail: 0 Smee
+262 henry greenville: 0 Smee
+263 jack griffin: 0 Smee
+264 john griffin: 0 Smee
+265 richard griffin: 0 Smee
+266 captain grogniet: 0 Smee
+267 breti gullimillit: 0 Smee
+268 juan gutterez: 0 Smee
+269 richard hains: 0 Smee
+270 captain john halsey: 0 Smee
+271 captain john haman: 0 Smee
+272 captain jean hamlin: 0 Smee
+273 israel hands : 0 Smee
+274 basilica hands: 0 Smee
+275 captain hansel: 0 Smee
+276 captain thomas harding: 0 Smee
+277 richard hardy: 0 Smee
+278 abraham harper: 0 Smee
+279 captain harris: 0 Smee
+280 hugh harris: 0 Smee
+281 james harris: 0 Smee
+282 peter harris: 0 Smee
+283 richard harris: 0 Smee
+284 captain harrison: 0 Smee
+285 captain harvey: 0 Smee
+286 william harvey: 0 Smee
+287 john harwood: 0 Smee
+288 captain hattsell: 0 Smee
+289 captain hawkins: 0 Smee
+290 sir john hawkins: 0 Smee
+291 captain thomas hawkins: 0 Smee
+292 thomas hawkins: 0 Smee
+293 captain hayes : 0 Smee
+294 bully hayes: 0 Smee
+295 thomas hazel: 0 Smee
+296 peter heaman: 0 Smee
+297 peleg heath: 0 Smee
+298 captain heidon: 0 Smee
+299 captain henley: 0 Smee
+300 captain herdue: 0 Smee
+301 augustus hernandez: 0 Smee
+302 david herriott: 0 Smee
+303 william hewett: 0 Smee
+304 daniel hide: 0 Smee
+305 corporal john hill: 0 Smee
+306 john hilliard: 0 Smee
+307 dr. john hincher: 0 Smee
+308 israel hind: 0 Smee
+309 john hingson: 0 Smee
+310 robert hitchens: 0 Smee
+311 anthony holding: 0 Smee
+312 captain holford: 0 Smee
+313 captain richard holland: 0 Smee
+314 mr. hopkins: 0 Smee
+315 captain hore: 0 Smee
+316 captain benjamin hornigold: 0 Smee
+317 thomas how: 0 Smee
+318 thomas howard: 0 Smee
+319 thomas huggit: 0 Smee
+320 captain edward hull: 0 Smee
+321 andrew hunter: 0 Smee
+322 john husk: 0 Smee
+323 joseph hutnot: 0 Smee
+324 captain george hutt: 0 Smee
+325 gunner william ingram: 0 Smee
+326 john ireland: 0 Smee
+327 captain irvine: 0 Smee
+328 captain jackman: 0 Smee
+329 captain william jackson: 0 Smee
+330 nathaniel jackson: 0 Smee
+331 captain james: 0 Smee
+332 charles james: 0 Smee
+333 captain janquais: 0 Smee
+334 benjamin jefferys: 0 Smee
+335 jennings: 0 Smee
+336 captain jennings: 0 Smee
+337 richard jobson: 0 Smee
+338 le capitaine jocard: 0 Smee
+339 captain johnson: 0 Smee
+340 captain ben johnson: 0 Smee
+341 captain henry johnson: 0 Smee
+342 isaac johnson: 0 Smee
+343 jacob johnson: 0 Smee
+344 john johnson: 0 Smee
+345 marcus johnson: 0 Smee
+346 robert johnson: 0 Smee
+347 thomas johnston: 0 Smee
+348 captain paul jones: 0 Smee
+349 seaman jones: 0 Smee
+350 thomas jones: 0 Smee
+351 william jones: 0 Smee
+352 william jones: 0 Smee
+353 captain jonnia: 0 Smee
+354 miguel jose: 0 Smee
+355 randall judson: 0 Smee
+356 kellwanton: 0 Smee
+357 captain kennedy: 0 Smee
+358 kheyr-ed-din: 0 Smee
+359 captain william kidd: 0 Smee
+360 james killing: 0 Smee
+361 charles king: 0 Smee
+362 francis king: 0 Smee
+363 john king: 0 Smee
+364 matthew king: 0 Smee
+365 peter kneeves: 0 Smee
+366 captain w. knight: 0 Smee
+367 christopher knight: 0 Smee
+368 captain knot: 0 Smee
+369 koxinga: 0 Smee
+370 kuo-hsing yeh: 0 Smee
+371 abraham lacy: 0 Smee
+372 captain john du laerquerac: 0 Smee
+373 captain jean lafitte: 0 Smee
+374 le captaine lagarde: 0 Smee
+375 john lambert: 0 Smee
+376 daniel lander: 0 Smee
+377 captain michael landresson: 0 Smee
+378 captain lane: 0 Smee
+379 captain thomas larimore: 0 Smee
+380 nicholas lawrence: 0 Smee
+381 richard lawrence: 0 Smee
+382 edward lawson: 0 Smee
+383 l'escayer: 0 Smee
+384 captain lessone: 0 Smee
+385 sam levercott: 0 Smee
+386 john levit: 0 Smee
+387 james lewis: 0 Smee
+388 nicholas lewis: 0 Smee
+389 william lewis: 0 Smee
+390 francis leyton: 0 Smee
+391 manuel lima: 0 Smee
+392 captain linch: 0 Smee
+393 captain william ling: 0 Smee
+394 thomas linisler: 0 Smee
+395 captain lithgow: 0 Smee
+396 william liver: 0 Smee
+397 mrs. hon-cho lo: 0 Smee
+398 thomas lodge: 0 Smee
+399 zachariah long: 0 Smee
+400 john lopez: 0 Smee
+401 john lord: 0 Smee
+402 captain edward low: 0 Smee
+403 captain george lowther: 0 Smee
+404 captain ludbury: 0 Smee
+405 captain matthew luke: 0 Smee
+406 captain lushingham: 0 Smee
+407 lesieur raveneau de lussan: 0 Smee
+408 daniel machauly: 0 Smee
+409 edward mackdonald: 0 Smee
+410 captain macket: 0 Smee
+411 william mackintosh: 0 Smee
+412 william magnes: 0 Smee
+413 william main: 0 Smee
+414 william main: 0 Smee
+415 marquis de maintenon: 0 Smee
+416 captain henry mainwaring: 0 Smee
+417 captain antonio el majorcam: 0 Smee
+418 jo mansfield: 0 Smee
+419 captain edward mansfield: 0 Smee
+420 captai david marteen: 0 Smee
+421 captain john martel: 0 Smee
+422 john martin: 0 Smee
+423 captain john massey: 0 Smee
+424 william may: 0 Smee
+425 captain william maze: 0 Smee
+426 captain dennis mccarthy: 0 Smee
+427 hans van meghlyn: 0 Smee
+428 de melton: 0 Smee
+429 william melvin: 0 Smee
+430 antonio mendoza: 0 Smee
+431 meyeurus: 0 Smee
+432 captaine michel: 0 Smee
+433 le basque michel: 0 Smee
+434 don miguel: 0 Smee
+435 francesco miguel: 0 Smee
+436 john miller: 0 Smee
+437 thomas miller: 0 Smee
+438 sieur du misnil: 0 Smee
+439 captain misson: 0 Smee
+440 captain mitchell: 0 Smee
+441 john mitchell: 0 Smee
+442 peter m'kinlie: 0 Smee
+443 montbars (the exterminator): 0 Smee
+444 montenegro: 0 Smee
+445 francis de mont: 0 Smee
+446 captain christopher moody: 0 Smee
+447 gunner moore: 0 Smee
+448 captain morgan: 0 Smee
+449 colonel blodre morgan: 0 Smee
+450 lieut.-colonel edward morgan: 0 Smee
+451 lieut.-colonel thomas morgan: 0 Smee
+452 sir henry moran: 0 Smee
+453 humphrey morrice: 0 Smee
+454 captain john morris: 0 Smee
+455 captain thomas morris: 0 Smee
+456 john morris: 0 Smee
+457 captain morrison: 0 Smee
+458 william morrison: 0 Smee
+459 philip morton: 0 Smee
+460 james mullet (millet): 0 Smee
+461 darby mullins: 0 Smee
+462 thomas mumper: 0 Smee
+463 stephen mundon: 0 Smee
+464 mustapha: 0 Smee
+465 captain jean david nau: 0 Smee
+466 neal: 0 Smee
+467 william neff: 0 Smee
+468 captain nelson: 0 Smee
+469 thomas nicholls: 0 Smee
+470 pedro nondre: 0 Smee
+471 captain norman: 0 Smee
+472 captain nathaniel north: 0 Smee
+473 george norton: 0 Smee
+474 john nutt: 0 Smee
+475 ochali: 0 Smee
+476 samuel odell: 0 Smee
+477 thomas oughterlauney: 0 Smee
+478 captain pain: 0 Smee
+479 captain peter paine (le pain): 0 Smee
+480 peter painter: 0 Smee
+481 captain manuel rivero pardal: 0 Smee
+482 captain william parker: 0 Smee
+483 benjamin parkins: 0 Smee
+484 james parrot: 0 Smee
+485 neal patterson: 0 Smee
+486 james pattison: 0 Smee
+487 captain pease: 0 Smee
+488 ignatius pell: 0 Smee
+489 major penner: 0 Smee
+490 benjamin perkins: 0 Smee
+491 daniel perry: 0 Smee
+492 captain peterson: 0 Smee
+493 erasmus peterson: 0 Smee
+494 john peterson: 0 Smee
+495 captain petit: 0 Smee
+496 william petty: 0 Smee
+497 captain william phelipp: 0 Smee
+498 captain phillips: 0 Smee
+499 james philips: 0 Smee
+500 john phillips: 0 Smee
+501 joseph phillips: 0 Smee
+502 william phillips: 0 Smee
+503 richard phips: 0 Smee
+504 captain charles pickering: 0 Smee
+505 george pierse: 0 Smee
+506 john pitman: 0 Smee
+507 pedro poleas: 0 Smee
+508 captain porter: 0 Smee
+509 captain thomas pound: 0 Smee
+510 thomas powell: 0 Smee
+511 john power: 0 Smee
+512 thomas price: 0 Smee
+513 mathew primer: 0 Smee
+514 captain lawrence prince: 0 Smee
+515 captain pro: 0 Smee
+516 captain lawrence prowse: 0 Smee
+517 captain john pulling: 0 Smee
+518 captain pursser: 0 Smee
+519 captain john quelch: 0 Smee
+520 john quittance: 0 Smee
+521 captain john rackam: 0 Smee
+522 rahman-ben-jabir: 0 Smee
+523 captain raphaelina: 0 Smee
+524 captain rayner: 0 Smee
+525 william raynor: 0 Smee
+526 captain read: 0 Smee
+527 mary read: 0 Smee
+528 robert read: 0 Smee
+529 william read: 0 Smee
+530 philip readhead: 0 Smee
+531 captain john rhoade: 0 Smee
+532 david rice: 0 Smee
+533 owen rice: 0 Smee
+534 lieutenant richards: 0 Smee
+535 john richardson: 0 Smee
+536 nicholas richardson: 0 Smee
+537 john ridge: 0 Smee
+538 basil ringrose: 0 Smee
+539 peter roach: 0 Smee
+540 alexander rob: 0 Smee
+541 james robbins: 0 Smee
+542 captain bartholomew roberts: 0 Smee
+543 owen roberts: 0 Smee
+544 edward robinson: 0 Smee
+545 captain philip roche: 0 Smee
+546 peter roderigo: 0 Smee
+547 captain thomas rogers: 0 Smee
+548 captain woodes rogers: 0 Smee
+549 peter rollson: 0 Smee
+550 george ross: 0 Smee
+551 francis rossoe: 0 Smee
+552 captain george roundsivel: 0 Smee
+553 captain row: 0 Smee
+554 ruiz: 0 Smee
+555 sheik of rumps: 0 Smee
+556 rupert, prince of the rhine: 0 Smee
+557 captain le sage: 0 Smee
+558 edward salter: 0 Smee
+559 captain richard sample: 0 Smee
+560 captain robert sample: 0 Smee
+561 thomas sanders: 0 Smee
+562 captain richard sawkins: 0 Smee
+563 captain sawney: 0 Smee
+564 francisco de sayas: 0 Smee
+565 lewis scot: 0 Smee
+566 roger scot: 0 Smee
+567 william scott: 0 Smee
+568 chritopher scudamore: 0 Smee
+569 peter scudamore: 0 Smee
+570 captain robert searles: 0 Smee
+571 alexander selkirk: 0 Smee
+572 henry shergall: 0 Smee
+573 sir anthony shirley: 0 Smee
+574 captain shivers: 0 Smee
+575 william shutfield: 0 Smee
+576 john siccadam: 0 Smee
+577 henry simms : 0 Smee
+578 gentleman harry: 0 Smee
+579 captain skipton: 0 Smee
+580 captain james skyrm: 0 Smee
+581 george smith: 0 Smee
+582 john smith: 0 Smee
+583 john williams smith: 0 Smee
+584 major samuel smith: 0 Smee
+585 bernado de soto: 0 Smee
+586 captain benito de soto: 0 Smee
+587 joseph sound: 0 Smee
+588 james sparks: 0 Smee
+589 john sparkes: 0 Smee
+590 robert spratlin: 0 Smee
+591 captain francis farrington spriggs: 0 Smee
+592 captain springer: 0 Smee
+593 captain stanley: 0 Smee
+594 captain stedman: 0 Smee
+595 williams stephens: 0 Smee
+596 john stephenson: 0 Smee
+597 richard stiles: 0 Smee
+598 thomas storey: 0 Smee
+599 richard st. quintin: 0 Smee
+600 captain sturges: 0 Smee
+601 lord o'sullivan: 0 Smee
+602 thomas sutton: 0 Smee
+603 captain swan: 0 Smee
+604 captain switzer: 0 Smee
+605 david sympson: 0 Smee
+606 captain taylor: 0 Smee
+607 william taylor: 0 Smee
+608 captain edward teach: 0 Smee
+609 blackbeard: 0 Smee
+610 robert teague: 0 Smee
+611 john templeton: 0 Smee
+612 captain thomas tew: 0 Smee
+613 captain thomas: 0 Smee
+614 john thomas: 0 Smee
+615 captain thompson: 0 Smee
+616 richard thurbar: 0 Smee
+617 captain thurston: 0 Smee
+618 captain joseph thwaites: 0 Smee
+619 john tomkins: 0 Smee
+620 dennis topping: 0 Smee
+621 captain townley: 0 Smee
+622 captain tristrian: 0 Smee
+623 mathew tryer: 0 Smee
+624 robert tucker: 0 Smee
+625 captain tuvkerman: 0 Smee
+626 captain richard turnley: 0 Smee
+627 captain ort van tyle: 0 Smee
+628 boatswain john upton: 0 Smee
+629 uruj: 0 Smee
+630 captain vallanueva: 0 Smee
+631 captain moses vanclein: 0 Smee
+632 captain charles vane: 0 Smee
+633 captain nicholas vanhorn: 0 Smee
+634 captain veale: 0 Smee
+635 thomas veale: 0 Smee
+636 captain verpre: 0 Smee
+637 captain vigeron: 0 Smee
+638 villa rise: 0 Smee
+639 moses van vin: 0 Smee
+640 henry virgin: 0 Smee
+641 captain m.  la vivon: 0 Smee
+642 lionel wafer: 0 Smee
+643 captain thomas wake: 0 Smee
+644 john walden : 0 Smee
+645 miss nanney: 0 Smee
+646 thomas wansley: 0 Smee
+647 captain want: 0 Smee
+648 ward: 0 Smee
+649 captain ward: 0 Smee
+650 william warren: 0 Smee
+651 john waters: 0 Smee
+652 john watkins: 0 Smee
+653 captain john watling: 0 Smee
+654 henry watson: 0 Smee
+655 edward watts: 0 Smee
+656 samuel watts: 0 Smee
+657 william watts: 0 Smee
+658 john way: 0 Smee
+659 captain brigstock weaver: 0 Smee
+660 lieutenant joseph wells: 0 Smee
+661 richard west: 0 Smee
+662 tee wetherley: 0 Smee
+663 sir thomas whetstone: 0 Smee
+664 captain thomas white: 0 Smee
+665 james white: 0 Smee
+666 robert white: 0 Smee
+667 william white: 0 Smee
+668 william whitting: 0 Smee
+669 francis wife: 0 Smee
+670 william wiles: 0 Smee
+671 captain wilgress: 0 Smee
+672 captain john williams: 0 Smee
+673 captain morris williams: 0 Smee
+674 captain paul williams: 0 Smee
+675 david williams: 0 Smee
+676 john williams: 0 Smee
+677 lieutenant james williams: 0 Smee
+678 william williams: 0 Smee
+679 robert willis: 0 Smee
+680 alexander wilson: 0 Smee
+681 george wilson: 0 Smee
+682 james wilson: 0 Smee
+683 john wilson: 0 Smee
+684 captain christopher winter: 0 Smee
+685 john winter: 0 Smee
+686 william winter : 0 Smee
+687 mustapha: 0 Smee
+688 winthrop: 0 Smee
+689 captain francis witherborn: 0 Smee
+690 captain william wollervy: 0 Smee
+691 william wood: 0 Smee
+692 captain worley: 0 Smee
+693 daniel wormall: 0 Smee
+694 captain yallahs: 0 Smee
+695 captain yeates: 0 Smee
+696 andrew zekerman: 0 Smee
+697 -1: 0 Smee
