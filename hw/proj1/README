@@ -1,0 +1,64 @@
+SHAIKAT ISLAM
+PROJECT 1
+
+Outline of Data Structures and Algorithms:
+BT (as written in BinaryTree.cpp):
+
+Functions:
+
+Constructor and destructor:
+The constructor makes the root null and the destructor deletes the root of the tree.
+
+int get_length() const:
+Uses wrapper function to traverse left and right subtrees of the root, incrementing length each time.
+
+TreeItem get_leftmost():
+Uses wrapper to recursively traverse the left subtree.
+
+TreeItem get_rightmost():
+Uses wrapper to recursively traverse the right subtree; extremely similar to get_leftmost().
+
+BinaryNode * copy_tree(BinaryNode *):
+Copies entire tree recursively, going through left and right subtree.
+
+int count_leaves(BinaryNode *):
+Wrapper function to determine number of leaves in BinaryTree. Recursive.
+
+int height(BinaryNode *):
+If tree is null, return 0, else get the height of each left and right subtree, and add one at end for recursive statement.
+
+float sum(BinaryNode *);
+Traverses entire tree, returning a float of the sum of all the values of the ages within the tree.
+
+bool is_full() const:
+Uses try catch to allocate more memory.
+
+bool is_empty() const:
+If num_nodes = 0 or root is null, return true.
+
+void print(ostream &) const:
+Modifies ostream object to print the BT.
+
+void print_root(ostream &) const;
+Modifies the ostream object to print the root.
+
+BST (as written in BinarySearchTree.cpp):
+
+Functions:
+
+Copy Constructor and Assignment Operator:
+Similar to BT copy constructor. Makes a deep copy of the tree. The assignment operator is also similar, and makes a copy of the tree using the copy_tree(BinaryNode *) function.
+
+void remove_item(BinaryTree *):
+My function operates on the 0, 1, or 2 children test case to remove an item. If a node has 0 children, you can just delete it. If it has 1, make a temporary pointer to the current node's left or right node, delete the root, and return temp. If there are two children, then a predecessor functionc alled find_minimumbst is called to help with the deletion.
+
+BinaryNode * find_minimum_bst(BinaryNode *&):
+Finds minimum node and returns it by recursively going down the left subtree.
+
+void find_item(BinaryTree *):
+Uses a wrapper function to determine if an item exists within the node. If the root is null, the reference to be returned becomes false. If the item is found within the right subtree recursively, then the reference is modified to be true; the same is the case with the left subtree.
+
+Outline of Overall Structure of Program and Class-Driver Interaction:
+My program operates on the BinarySearchTree, BinaryTree, and Survivor classes. The info attribute defined in the struct written in Tree.h is a Survivor object, which was changed using a typedef definition. The BinarySearchTree class is a child (derived) class of the BinaryTree class, and overloads the virtual functions (remove, find_item, copy constructor, assignment operator) to work within the constraints of a sorted, structured tree, as the BST is. Survivor.cpp has a few attributes, such as first name, last name, age, hometown, state, and city, but I also added a survivor_id in order to help with the generate_next_survivor function. I have two of these functions, and I use the generate_n_function in order to get the survivor based on the next line within the file. This makes it easier to populate a pointer of Survivor objects in a linear, orderly fashion within survivor-driver.cpp. Survivor-driver.cpp instantiates two trees, a BT, and a BST, and randomly assigns them a castaways.txt or stowaways.txt infile, based on a random number generator, in the determine_round_one function. This function also declares two pointers of Survivor objects and allocates them based on the number of lines within the respective files to be read-in. I ensured that even if the length of the file was changed, the pointer of Survivor objects would change as well, with respect to the amount of dynamically allocated memory. In the determine_round_two function, I used a while loop to continuously print the subrounds, until the length of the tree that had won was zero. Then I printed the root, and ended the game/simulation.
+
+My program also incorporates two test drivers, one for the Survivor object, called survivor-test.cpp, and one for the trees called test-tree.cpp.

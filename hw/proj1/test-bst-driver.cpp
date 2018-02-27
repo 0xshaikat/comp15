@@ -113,7 +113,7 @@ void test_postorder(BinaryTree *BT)
 // Makes sure we correclty find the leftmost node
 void test_get_left(BinaryTree *bt)
 {
-    BinaryNode::TreeItem t = bt->get_leftmost();
+    TreeItem t = bt->get_leftmost();
     Survivor s;
     s.set_name("Richard", "Hatch1");
     if (t == s)

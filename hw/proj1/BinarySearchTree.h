@@ -1,5 +1,9 @@
 /*
  * BinarySearchTree.h
+ * Shaikat Islam
+ * COMP15
+ * 26-02-18
+ * Project 1
  *
  * Interface for derived class BST
  * Inherits from Binary Tree
@@ -19,9 +23,9 @@
 #define BINARY_SEARCH_TREE_H_
 
 // Prototypes for recursive wrapper functions
-void insert_bst(BinaryNode *&, BinaryNode::TreeItem);
-BinaryNode * remove_item_bst(BinaryNode *&, BinaryNode::TreeItem);
-void find_item_bst(BinaryNode *, BinaryNode::TreeItem &, bool &);
+void insert_bst(BinaryNode *&, TreeItem);
+BinaryNode * remove_item_bst(BinaryNode *&, TreeItem);
+void find_item_bst(BinaryNode *, TreeItem &, bool &);
 BinaryNode * find_minimum_bst(BinaryNode *&);
 
 class BinarySearchTree : public BinaryTree
@@ -39,9 +43,9 @@ public:
     BinarySearchTree & operator = (const BinarySearchTree &);
 
     // overridden from BinaryTree
-    void insert_item(BinaryNode::TreeItem);
-    void remove_item(BinaryNode::TreeItem);
-    void find_item(BinaryNode::TreeItem &, bool &) const;
+    void insert_item(TreeItem);
+    void remove_item(TreeItem);
+    void find_item(TreeItem &, bool &) const;
 
 };
 

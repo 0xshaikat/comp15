@@ -8,7 +8,7 @@ class Survivor
 {
  public:
     Survivor();
-    Survivor(string, string, string, string, int);
+    Survivor(string, string, string, string, float);
     void print(ostream &);
     void generate_next_survivor(ifstream &);
     void generate_n_survivor(ifstream &, int);
@@ -16,7 +16,7 @@ class Survivor
     friend bool operator == (const Survivor &, const Survivor &);
     friend bool operator < (const Survivor &, const Survivor &);
     friend bool operator > (const Survivor &, const Survivor &);
-    int get_age();
+    float get_age();
     int get_s_id();
 
  private:
@@ -24,7 +24,7 @@ class Survivor
     string last;
     string hometown;
     string state;
-    int age;
+    float age;
     int s_id;
 };//end class
 

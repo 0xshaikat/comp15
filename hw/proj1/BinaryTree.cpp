@@ -1,6 +1,10 @@
 /*
  * BinaryTree.cpp
  *
+ * Shaikat Islam
+ * COMP15
+ * 26-02-18
+ * Project 1
  * Implementation for base class BinaryTree
  * Starter code for Project 1
  *
@@ -21,13 +25,13 @@
 BinaryTree::BinaryTree()
 {
     root = NULL;
-}
+}// end constructor
 
 // Destructor
 BinaryTree::~BinaryTree()
 {
     destroy(root);
-}
+} // end destructor
 
 // Copy Constructor
 BinaryTree::BinaryTree(const BinaryTree &b)
@@ -59,7 +63,7 @@ BinaryTree & BinaryTree::operator = (const BinaryTree &b)
     return *this;
 }//end assignment operator
 
-// overloaded << operator to print tree
+// print tree with ostream
 void BinaryTree::print(ostream &output) const
 {
     (root->info).print(output);
@@ -73,7 +77,7 @@ void BinaryTree::print(ostream &output) const
     int l = count_leaves(root);
     output << "Number of leaves: " << l;
     output << "\n";
-}//end <<
+}//end print
 
 // Function print_root (const)
 // prints the root of a tree
@@ -125,7 +129,7 @@ int BinaryTree::get_height() const
 
 // Function avg_age (const)
 // Returns average age of all castaways in tree
-int BinaryTree::avg_age() const
+float BinaryTree::avg_age() const
 {
     return sum(root) / count_nodes(root);
 }//end avg_age
@@ -151,7 +155,7 @@ void BinaryTree::postorder(ostream &out) const
 // Function insert_item
 // Checks for fullness, throws exception if necessary
 // insert item into next open slot
-void BinaryTree::insert_item(BinaryNode::TreeItem item)
+void BinaryTree::insert_item(TreeItem item)
 {
     if (is_full())
         throw FullTree();
@@ -168,7 +172,7 @@ int BinaryTree::num_leaves() const
 
 // Function find_item
 // finds the given item using queue as auxiliary structure
-void BinaryTree::find_item(BinaryNode::TreeItem &item, bool & found) const
+void BinaryTree::find_item(TreeItem &item, bool & found) const
 {
     find_bt(root, item, found);
 }
@@ -176,7 +180,7 @@ void BinaryTree::find_item(BinaryNode::TreeItem &item, bool & found) const
 // Function remove_item
 // Checks for empty tree, throws exception if necssary
 // remove item, if found
-void BinaryTree::remove_item(BinaryNode::TreeItem item)
+void BinaryTree::remove_item(TreeItem item)
 {
     if (is_empty())
         throw EmptyTree();
@@ -192,7 +196,7 @@ void BinaryTree::remove_item(BinaryNode::TreeItem item)
 // Return the item at the deepest left node
 // (Would come first in an in-order traversal)
 // Throws exception if tree is empty
-BinaryNode::BinaryNode::TreeItem BinaryTree::get_leftmost() const
+TreeItem BinaryTree::get_leftmost() const
 {
     return return_leftmost(root);
 }
@@ -200,7 +204,7 @@ BinaryNode::BinaryNode::TreeItem BinaryTree::get_leftmost() const
 // Return the item at the deepest right node
 // (Would come second in a pre-order traversal)
 // Throws exception if tree is empty
-BinaryNode::BinaryNode::TreeItem BinaryTree::get_rightmost() const
+TreeItem BinaryTree::get_rightmost() const
 {
     return return_rightmost(root);
 }
@@ -263,12 +267,12 @@ void print_postorder(BinaryNode *tree, ostream &out)
 }
 
 // Function insert_bt (wrapper)
-// Params: BinaryNode reference, BinaryNode::TreeItem
+// Params: BinaryNode reference, TreeItem
 // Returns: void
 // Does: Finds next open spot using a queue
 //       allocates a new BinaryNode and sets
 //       its info to the given tree
-void insert_bt(BinaryNode *&tree, BinaryNode::TreeItem item)
+void insert_bt(BinaryNode *&tree, TreeItem item)
 {
     // enqueue and dequeue until empty
     BinaryNode *temp = NULL;
@@ -309,12 +313,12 @@ void insert_bt(BinaryNode *&tree, BinaryNode::TreeItem item)
 }
 
 // Function find_bt (not a member function)
-// Parameters: BinaryNode (root), BinaryNode::TreeItem reference, bool reference
+// Parameters: BinaryNode (root), TreeItem reference, bool reference
 // Returns: void
 // Does: Uses an auxiliary queue to iterate through each node
 //       until the item is found. Updates the item reference with
 //       the one actually found, and bool reference with true/false.
-void find_bt(BinaryNode *tree, BinaryNode::TreeItem &item, bool &found)
+void find_bt(BinaryNode *tree, TreeItem &item, bool &found)
 {
     found = false;
     if (tree == NULL)
@@ -343,12 +347,12 @@ void find_bt(BinaryNode *tree, BinaryNode::TreeItem &item, bool &found)
 }
 
 // Function remove_bt (wrapper)
-// Parameters: BinaryNode reference (root), BinaryNode::TreeItem to remove
+// Parameters: BinaryNode reference (root), TreeItem to remove
 // Returns: void
 // Does: Uses an auxiliary queue to find the deepest item
 //       swaps one to delete with deepest item
 //       deletes deepest item
-void remove_bt(BinaryNode *&tree, BinaryNode::TreeItem item)
+void remove_bt(BinaryNode *&tree, TreeItem item)
 {
     if (tree == NULL)
     {
@@ -371,7 +375,7 @@ void remove_bt(BinaryNode *&tree, BinaryNode::TreeItem item)
             q.enqueue(deep->right);
     }
 
-    BinaryNode::TreeItem val = deep->info;
+    TreeItem val = deep->info;
     delete_deepest(tree, deep);
     if (deep != keynode)
         keynode->info = val;
@@ -415,9 +419,9 @@ void delete_deepest(BinaryNode *&tree, BinaryNode *&deepnode)
 
 // Function return_leftmost(wrapper)
 // Params: BinaryNode *, the tree
-// Returns: BinaryNode::TreeItem, the info in the deepest left node
+// Returns: TreeItem, the info in the deepest left node
 // Throws exception if tree is empty, it has no leftmost node
-BinaryNode::TreeItem return_leftmost(BinaryNode *tree)
+TreeItem return_leftmost(BinaryNode *tree)
 {
     if (tree == NULL)
         throw EmptyTree();
@@ -429,9 +433,9 @@ BinaryNode::TreeItem return_leftmost(BinaryNode *tree)
 
 // Function return_rightmost(wrapper)
 // Params: BinaryNode *, the tree
-// Returns: BinaryNode::TreeItem, the info in the deepest rightmost node
+// Returns: TreeItem, the info in the deepest rightmost node
 // Throws exception if tree is empty, it has no rightmost node
-BinaryNode::TreeItem return_rightmost(BinaryNode *tree)
+TreeItem return_rightmost(BinaryNode *tree)
 {
     if (tree == NULL)
         throw EmptyTree();
@@ -508,7 +512,7 @@ int height(BinaryNode *tree)
 
 // Function sum(BinaryNode *) (wrapper)
 // Returns sum of ages of castaways in tree
-int sum(BinaryNode *tree)
+float sum(BinaryNode *tree)
 {
     if (tree == NULL)
     {
@@ -516,7 +520,7 @@ int sum(BinaryNode *tree)
     }//end if
     else
     {
-        int total = tree->info.get_age();
+        float total = tree->info.get_age();
         if (tree->left != NULL)
         {
             total += sum(tree->left);

@@ -161,7 +161,7 @@ void test_remove(BinaryTree *BT, int new_length)
 // Makes sure we correclty find the leftmost node
 void test_get_left(BinaryTree *bt)
 {
-    BinaryNode::TreeItem t = bt->get_leftmost();
+    TreeItem t = bt->get_leftmost();
     Survivor s;
     s.set_name("Richard", "Hatch2");
     if (t == s)

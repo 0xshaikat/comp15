@@ -1,13 +1,14 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <math.h>
 #include <cstdlib>
 #include <stdlib.h>
 #include "BinaryTree.h"
 #include "BinarySearchTree.h"
 #include "Survivor.h"
 
-//FUNCTION DEFS:
+//FUNCTION DEFINITIONS:
 void populate_trees(BinaryTree *, BinaryTree *);
 BinaryTree * determine_round_one(BinaryTree *, BinaryTree *);
 void determine_round_two(BinaryTree *);
@@ -100,10 +101,12 @@ void populate_trees(BinaryTree *bt, BinaryTree *bst)
         }//end for
     }//end else
 
+    // delete memory
     delete []castaway;
     delete []stowaway;
 }//end populate_trees
 
+// function to get round one
 BinaryTree * determine_round_one(BinaryTree *bt, BinaryTree *bst)
 {
     if (bt->num_leaves() < bst->num_leaves())
@@ -122,16 +125,17 @@ BinaryTree * determine_round_one(BinaryTree *bt, BinaryTree *bst)
         bst->print(objOstream);
         return bst;
     }//end else if
-    else if (bst->num_leaves() == bt->num_leaves())
+    else
     {
         cout << "Loser had " << bst->num_leaves() << " leaves\n";
         cout << "ROUND ONE WINNER: BT\n";
         ostream & objOstream = cout;
         bt->print(objOstream);
         return bt;
-    }//end else
+    }//end else if
 }//end determine_round_one
 
+// function to get round two
 void determine_round_two(BinaryTree *bt)
 {
     int n = 0;
@@ -139,10 +143,10 @@ void determine_round_two(BinaryTree *bt)
     while (bt->get_length() != 1)
     {
         cout << "Average age this round " << bt->avg_age() << endl;
-        BinaryNode::TreeItem leftmost = bt->get_leftmost();
-        BinaryNode::TreeItem rightmost = bt->get_rightmost();
-        n = abs(leftmost.get_age() - bt->avg_age());
-        m = abs(rightmost.get_age() - bt->avg_age());
+        TreeItem leftmost = bt->get_leftmost();
+        TreeItem rightmost = bt->get_rightmost();
+        n = fabs(leftmost.get_age() - bt->avg_age());
+        m = fabs(rightmost.get_age() - bt->avg_age());
         if (n > m)
         {
             cout << "Voted off the island:\n";
@@ -170,6 +174,6 @@ void determine_round_two(BinaryTree *bt)
     }//end while
     cout << "WINNING SURVIVOR:\n";
     ostream & objOstream = cout;
-    BinaryNode::TreeItem win = bt->get_rightmost();
+    TreeItem win = bt->get_rightmost();
     win.print(objOstream);
 }//end determine_round_two
