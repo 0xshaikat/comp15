@@ -1,0 +1,760 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Made with Remarkable!
+  </title>
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/styles/github.min.css" rel="stylesheet"/>
+  <style type="text/css">
+   @import url(http://fonts.googleapis.com/css?family=Vollkorn:400,400italic,700,700italic&subset=latin);ol,ul{padding-left:1.2em}body,code,html{background:#fff}body,h1 a,h1 a:hover{color:#333}a,h1 a,h1 a:hover{text-decoration:none}hr,video{margin:2em 0}h1,h2,p#heart{text-align:center}table tr td,table tr th{border:1px solid #ccc;text-align:left;padding:6px 13px;margin:0}h1,p,table tr td :first-child,table tr th :first-child{margin-top:0}pre code,table,table tr{padding:0}body,html{padding:1em;margin:auto}body{font:1.3em Vollkorn,Palatino,Times;line-height:1;text-align:justify}h1,h2,h3{font-weight:400}h3,nav{font-style:italic}code,nav{font-size:.9em}article,footer,header,nav{margin:0 auto}article{margin-top:4em;margin-bottom:4em;min-height:400px}footer{margin-bottom:50px}video{border:1px solid #ddd}nav{border-bottom:1px solid #ddd;padding:1em 0}nav p{margin:0}p{-webkit-hypens:auto;-moz-hypens:auto;hyphens:auto}ul{list-style:square}blockquote{margin-left:1em;padding-left:1em;border-left:1px solid #ddd}code{font-family:Consolas,Menlo,Monaco,monospace,serif}a{color:#2484c1}a:hover{text-decoration:underline}a img{border:0}hr{color:#ddd;height:1px;border-top:solid 1px #ddd;border-bottom:0;border-left:0;border-right:0}p#heart{font-size:2em;line-height:1;color:#ccc}.red{color:#b50000}body#index li{margin-bottom:1em}@media only screen and (max-device-width:1024px){body{font-size:120%;line-height:1.4}}@media only screen and (max-device-width:480px){body{text-align:left}article,footer{width:auto}article{padding:0 10px}}table tr{border-top:1px solid #ccc;background-color:#fff;margin:0}table tr:nth-child(2n){background-color:#aaa}table tr th{font-weight:700}table tr td:last-child,table tr th :last-child{margin-bottom:0}img{max-width:100%}code,tt{margin:0 2px;padding:0 5px;white-space:nowrap;border:1px solid #eaeaea;background-color:#f8f8f8;border-radius:3px}pre code{margin:0;white-space:pre;border:none;background:0 0}.highlight pre,pre{background-color:#f8f8f8;border:1px solid #ccc;font-size:13px;line-height:19px;overflow:auto;padding:6px 10px;border-radius:3px}
+  </style>
+ </head>
+ <body>
+  <h1 id="study-guide-1-comp15">
+   Study Guide 1: COMP15
+  </h1>
+  <h3 id="pointer-review">
+   Pointer Review
+  </h3>
+  <ul>
+   <li>
+    stored in the stack, point to the heap or stack
+    <pre><code>//POINTERS
+int c = 10;
+int &amp;p = NULL;
+p = &amp;c; // &amp; = referencing pointer
+int *q = NULL;
+int q2 = 2;
+q = &amp;q2; // dereference once again
+p = q;// set pointers equal to each other
+//DECLARING AN ARRAY OF POINTERS
+int *arr_ptr = new int[5];
+int **arr_ptr_2 = new int[3][3];
+//DELETE ARRAYS
+delete []arr_ptr; //delete 1d array
+delete [][]arr_ptr_2; //delete 2d array
+</code></pre>
+   </li>
+  </ul>
+  <h3 id="leak-check">
+   Leak Check
+  </h3>
+  <ul>
+   <li>
+    VALGRIND: check for leak:
+    <strong>
+     <em>
+      valgrind –leak -ch=full ./a.out
+     </em>
+    </strong>
+   </li>
+   <li>
+    memory errors could occur such as in the case of double free, which would return an invalid free error
+   </li>
+  </ul>
+  <h3 id="gdb-debugging">
+   GDB &amp; Debugging
+  </h3>
+  <ul>
+   <li>
+    formalize expectations for expected use-cases
+   </li>
+   <li>
+    robustify code
+   </li>
+   <li>
+    can write test cases for functions
+   </li>
+   <li>
+    two testing paradigms for testing:
+    <ul>
+     <li>
+      exhaustive: test every possible input
+     </li>
+     <li>
+      random: test a subset of possible inputs to act w/ a  degree of probability
+     </li>
+    </ul>
+   </li>
+   <li>
+    to run:
+    <strong>
+     <em>
+      gdb ./program_name
+     </em>
+    </strong>
+   </li>
+   <li>
+    then:
+    <strong>
+     <em>
+      run
+     </em>
+    </strong>
+   </li>
+   <li>
+    running
+    <strong>
+     where
+    </strong>
+    shows when the program’s stack calss upon exit
+   </li>
+   <li>
+    use
+    <strong>
+     <em>
+      q
+     </em>
+    </strong>
+    to quit gdb
+   </li>
+   <li>
+    to silence unused variable warnings: typecast the variable as void:
+    <ul>
+     <li>
+      <strong>
+       <em>
+        (void) argc
+       </em>
+      </strong>
+     </li>
+     <li>
+      <strong>
+       <em>
+        (void) argv
+       </em>
+      </strong>
+     </li>
+    </ul>
+   </li>
+  </ul>
+  <h3 id="difference-between-heap-and-stack">
+   Difference Between Heap and Stack
+  </h3>
+  <ul>
+   <li>
+    <strong>
+     STACK:
+    </strong>
+    <ul>
+     <li>
+      memory set aside as scratch space for thread of execution
+     </li>
+     <li>
+      when a function is called, a block is reserved on top of the stack for local vars
+     </li>
+     <li>
+      when that function returns, the block becomes unused and can be used the next time the function is called
+     </li>
+     <li>
+      the stack is always resered in a LIFO order (most recent reserved block is always the next to be freed)
+     </li>
+     <li>
+      makes it simple to keep track of the stack
+     </li>
+     <li>
+      to free a block from the stack, you can just adjust one pointer
+     </li>
+    </ul>
+   </li>
+   <li>
+    <strong>
+     HEAP:
+    </strong>
+    <ul>
+     <li>
+      memory set aside for dynamic allocation
+     </li>
+     <li>
+      no enforced pattern for allocation and deallocation of blocks from heap
+     </li>
+     <li>
+      can allocate a block and free it at any time
+     </li>
+     <li>
+      makes it more complex to keep track of which parts of the heap are allocated or free at any given time
+     </li>
+    </ul>
+   </li>
+   <li>
+    <p>
+     <strong>
+      BOTH:
+     </strong>
+    </p>
+    <ul>
+     <li>
+      each thread gets a stack, whereas there is usually only one heap for the program
+     </li>
+     <li>
+      there can be multiple heaps for different types of allocation
+     </li>
+     <li>
+      scope of a stack depends on the thread it is attached to; when the thread exits, the stack is reclaimed
+     </li>
+     <li>
+      the heap is allocated at runtime, and is reclaimed when the application exits
+     </li>
+     <li>
+      the size of the stack is set when a thread is created
+     </li>
+     <li>
+      the size of the heap can grow as needed
+     </li>
+     <li>
+      stack is faster because access pattern is trivial to allocate and deallocate (a pointer is simply incremented/decremented)
+     </li>
+     <li>
+      the heap is far more complex due to the bookkeeping involved in allocation/deallocation
+     </li>
+     <li>
+      bytes in stacks are mapped to the processors cache, so that makes it faster to
+     </li>
+     <li>
+      the heap is a global resoruce and is slower
+     </li>
+    </ul>
+    <p>
+     <img alt="" src="imgs/20180301-005544.png"/>
+    </p>
+   </li>
+   <li>
+    <p>
+     <strong>
+      FURTHERMORE:
+     </strong>
+    </p>
+    <ul>
+     <li>
+      <strong>
+       STACK:
+      </strong>
+     </li>
+     <li>
+      Stored in computer RAM just like the heap.
+     </li>
+     <li>
+      Variables created on the stack will go out of scope and are automatically deallocated.
+     </li>
+     <li>
+      Much faster to allocate in comparison to variables on the heap.
+     </li>
+     <li>
+      Implemented with an actual stack data structure.
+     </li>
+     <li>
+      Stores local data, return addresses, used for parameter passing.
+     </li>
+     <li>
+      Can have a stack overflow when too much of the stack is used (mostly from infinite or too deep recursion, very large allocations).
+     </li>
+     <li>
+      Data created on the stack can be used without pointers.
+     </li>
+     <li>
+      You would use the stack if you know exactly how much data you need to allocate before compile time and it is not too big.
+     </li>
+     <li>
+      Usually has a maximum size already determined when your program starts.
+     </li>
+     <li>
+      <strong>
+       HEAP:
+      </strong>
+     </li>
+     <li>
+      Stored in computer RAM just like the stack.
+     </li>
+     <li>
+      In C++, variables on the heap must be destroyed manually and never fall out of scope. The data is freed with delete, delete[], or free.
+     </li>
+     <li>
+      Slower to allocate in comparison to variables on the stack.
+     </li>
+     <li>
+      Used on demand to allocate a block of data for use by the program.
+     </li>
+     <li>
+      Can have fragmentation when there are a lot of allocations and deallocations.
+     </li>
+     <li>
+      In C++ or C, data created on the heap will be pointed to by pointers and allocated with new or malloc respectively.
+     </li>
+     <li>
+      Can have allocation failures if too big of a buffer is requested to be allocated.
+     </li>
+     <li>
+      You would use the heap if you don’t know exactly how much data you will need at run time or if you need to allocate a lot of data.
+     </li>
+     <li>
+      Responsible for memory leaks.
+     </li>
+    </ul>
+   </li>
+  </ul>
+  <h3 id="runtime-complexities">
+   Runtime Complexities
+  </h3>
+  <p>
+   <img alt="" src="imgs/20180301-010352.png"/>
+   <br/>
+   -
+   <strong>
+    Runtime Complexity of Expand Function on ArrayList:
+   </strong>
+   <br/>
+   - call expand() function when the array reaches capacity
+   <br/>
+   - takes 28 steps to insert 16 items (better than ~256 it would take if one had expanded every time)
+   <br/>
+   - amortized O(1)
+  </p>
+  <h3 id="stacks">
+   Stacks
+  </h3>
+  <ul>
+   <li>
+    LIFO
+   </li>
+   <li>
+    only two operations: pop and push
+   </li>
+   <li>
+    recursive data structure
+   </li>
+   <li>
+    all stack operations must run in O(1)
+   </li>
+   <li>
+    LL implementation of Stack is most efficient in making it dynamic
+   </li>
+  </ul>
+  <h3 id="queues">
+   Queues
+  </h3>
+  <ul>
+   <li>
+    contianer of objects that inserted according to FIFO
+   </li>
+   <li>
+    only two operations allowed: enqueue and dequeue
+   </li>
+   <li>
+    enqueue: to insert an item into the back of the queue
+   </li>
+   <li>
+    dequeue: to remove the front item
+   </li>
+  </ul>
+  <h3 id="differences-between-stacks-and-queues">
+   Differences between Stacks and Queues:
+  </h3>
+  <ul>
+   <li>
+    removal
+   </li>
+   <li>
+    each operation must run in O(1)
+   </li>
+  </ul>
+  <h3 id="arraylists">
+   ArrayLists
+  </h3>
+  <ul>
+   <li>
+    contiguous in memory
+   </li>
+   <li>
+    size can change dynamically; use a dynamically allocated array to store elements
+   </li>
+   <li>
+    ArrayLists consume more memory in exchange fro the ability to manage storage and grow dynamically in an efficient way
+   </li>
+   <li>
+    allocated memory for its elements on the heap
+   </li>
+   <li>
+    frees heap memory when it goes out of scope (calls destructor)
+   </li>
+   <li>
+    accessing any element is O(1) due to it being contiguous in memory
+   </li>
+   <li>
+    inserting elements at the tail is O(1), but inserting at the head is O(n)
+   </li>
+  </ul>
+  <h3 id="linkedlists">
+   LinkedLIsts
+  </h3>
+  <ul>
+   <li>
+    uses dynamic memory allocation (stored on heap)
+   </li>
+   <li>
+    made up of node objects, which have a pointer to the next node object
+   </li>
+   <li>
+    implementing header node eliminates special cases:
+   </li>
+   <li>
+    to insert a new element:
+    <ul>
+     <li>
+      first new list node created
+     </li>
+     <li>
+      then value is placed in curr-&gt;next
+     </li>
+     <li>
+      once node is added, tail is pushed forwared
+     </li>
+     <li>
+      insertion is O(1)
+     </li>
+    </ul>
+   </li>
+  </ul>
+  <h3 id="comparison-of-both">
+   Comparison of Both
+  </h3>
+  <ul>
+   <li>
+    ArrayLists have disadvantage that size must be predetermined before array is allocated.
+   </li>
+   <li>
+    Cannot grow beyond predetermined size
+   </li>
+   <li>
+    Link lists have advantage that they only need space for objects located on their list
+   </li>
+   <li>
+    ArrayLists: advantage that there is no wasted space for an individual element
+   </li>
+   <li>
+    LinkedLists: requre an additional pointer for ever list node
+   </li>
+   <li>
+    amount of space required for an ArrayList: DE(size of data elemnt * max. number of list elements)
+   </li>
+   <li>
+    for LinkedList: n(P+E), P is size of pointer in storage, n is number of elements on list
+   </li>
+   <li>
+    LinkedList are more space efficient when number of elements varies or is unknown
+   </li>
+   <li>
+    ArrayLists are space efficient when the max lenght is known
+   </li>
+   <li>
+    O(n) to access element in LL, O(1) in AL
+   </li>
+   <li>
+    O(1) for insert and removal in LL, O(n) in AL
+   </li>
+  </ul>
+  <h3 id="implementations">
+   Implementations
+  </h3>
+  <ul>
+   <li>
+    <strong>
+     see appendix a.(a) for code examples
+    </strong>
+   </li>
+  </ul>
+  <h3 id="the-rule-of-three">
+   The Rule of Three
+  </h3>
+  <ul>
+   <li>
+    for any class with dynamic memory, we write a copy constructor, assignment operator, and destructor
+   </li>
+  </ul>
+  <h3 id="copy-constructor-and-assignment-operator">
+   Copy Constructor and Assignment Operator
+  </h3>
+  <ul>
+   <li>
+    copy constructor invoked when we’re making a new object
+   </li>
+   <li>
+    <p>
+     assignment operator invoked when we replace an existing object
+    </p>
+    <pre><code>LL myList; #invokes default constructor
+#myList is pushed on to stack
+#inserting into LL allocates nodes on the heap
+
+LL l2; #calls default constructor (on execution stack)
+
+l2 = myList #replacing calls assignment operator
+#not using assignment operator points l2 and myList 
+#to the same location in memory in the heap, so destructing one of them destructs both of them. calling the assignment operator makes a deep copy of the original myList and points l2 to it (2 pointers, 2 locations in memory)
+
+LL l3 = foo(myList) #invokes copy constructor, scope of copy constructor is in foo, and somewhere in heap, there will be a deep copy of myList that foo modifies , and original myList will be unaffected in main. After foo modifies this deep copy, l3 calls the copy constructor (not the assignment operator) because l3 did not exist in the first place. If l3 was declared originally, and then assigned to foo, then the assignment operator would be called
+</code></pre>
+   </li>
+   <li>
+    <p>
+     <strong>
+      see appendix a.(b) for code examples
+     </strong>
+    </p>
+   </li>
+  </ul>
+  <h3 id="binary-trees">
+   Binary Trees
+  </h3>
+  <ul>
+   <li>
+    every node has 0, 1, or 2 children
+   </li>
+   <li>
+    a leaf is a node with no children
+   </li>
+   <li>
+    root is at the top of the tree (entry point)
+   </li>
+   <li>
+    a node has a
+    <strong>
+     depth
+    </strong>
+    (number of levels away from root)
+   </li>
+   <li>
+    a tree’s height is the depth of the deepest node
+   </li>
+   <li>
+    <strong>
+     Binary Search Tree
+    </strong>
+    :
+    <ul>
+     <li>
+      is a type of binary tree
+     </li>
+     <li>
+      no duplicates
+     </li>
+     <li>
+      can be unbalanced
+     </li>
+     <li>
+      but nicely sorted
+     </li>
+     <li>
+      anode is smaller than right subtree, but larger than left subtree
+     </li>
+    </ul>
+   </li>
+   <li>
+    BinaryNode struct:
+    <pre><code>class BinaryTree //base class
+{
+    public:
+
+    protected; //instead of private
+        BinaryNode *root;
+};
+
+class BST: public BT //derivedclass
+{
+    public:
+};
+
+struct BinaryNode
+{
+    int value;
+    BinaryNode *left;
+    BInaryNode *right;
+}//end struct
+</code></pre>
+   </li>
+  </ul>
+  <h3 id="traversals-recursion">
+   Traversals + Recursion
+  </h3>
+  <ul>
+   <li>
+    Functions the same for BT and BST
+   </li>
+   <li>
+    structure, not values
+   </li>
+   <li>
+    traversal ‘visit’ every node
+   </li>
+   <li>
+    print every node of the tree
+   </li>
+   <li>
+    recursive functions b/c a subtree is a binary tree
+   </li>
+   <li>
+    base case (usally empty tree)
+   </li>
+   <li>
+    recursive step (go left, or right)
+   </li>
+   <li>
+    Pseudocode:
+    <pre><code>Pre-order traversal pseudocode:
+    -print root
+    -recursively print left subtree
+    - recurseivley print right subtree
+
+void print_pre(BinaryNode *tree, ostream &amp;out)
+{
+    if (tree == NULL)
+        {
+            return;
+        {
+        else
+        {
+            out &lt;&lt; tree-&gt;value &lt;&lt; endl;
+            print_pre(BinaryNode tree-&gt;left, out);
+            print_pre(BinaryNode tree-&gt;right, out);
+        }
+}//end print_pre
+</code></pre>
+   </li>
+  </ul>
+  <h3 id="binarytree-and-binarysearchtree">
+   BinaryTree and BinarySearchTree
+  </h3>
+  <ul>
+   <li>
+    depth = height - 1
+   </li>
+   <li>
+    a leaf is a node with no children
+   </li>
+   <li>
+    a full binary tree has leaves or nodes with two children
+   </li>
+   <li>
+    in a complete binary tree all levels besides possible d-1 is full
+   </li>
+   <li>
+    the number of leaves in a non-empty full binary tree is one more tahn the number of internal nodes
+   </li>
+  </ul>
+  <h3 id="traversals">
+   Traversals
+  </h3>
+  <ul>
+   <li>
+    Preorder: Left, Root, Right
+   </li>
+   <li>
+    Postorder: Root, Left, Right
+   </li>
+   <li>
+    Inorder: Left, Right, Root
+    <br/>
+    <img alt="" src="imgs/20180301-034118.png"/>
+   </li>
+  </ul>
+  <h3 id="functions-not-inherited-in-bst">
+   Functions not Inherited in BST
+  </h3>
+  <ul>
+   <li>
+    destructor
+   </li>
+   <li>
+    CC and AO
+   </li>
+   <li>
+    insert
+   </li>
+   <li>
+    find
+   </li>
+   <li>
+    <p>
+     remove:
+     <br/>
+     <a href="http://www.algolist.net/Data_structures/Binary_search_tree/Removal">
+      http://www.algolist.net/Data_structures/Binary_search_tree/Removal
+     </a>
+    </p>
+   </li>
+   <li>
+    <p>
+     <strong>
+      see appendix a.(c) for code sample
+     </strong>
+    </p>
+   </li>
+  </ul>
+  <h3 id="inheritance">
+   Inheritance
+  </h3>
+  <ul>
+   <li>
+    polymorphism allows for less code reuse
+   </li>
+   <li>
+    <strong>
+     polymorphism
+    </strong>
+    - ability to treat objects of different data types as if they were the same
+   </li>
+   <li>
+    protected data members can only be accessible from derived classes
+   </li>
+   <li>
+    virtual member functions can be overrided by the dervied class, enabling polymorphism
+   </li>
+   <li>
+    virtual function is late binding ; BinaryTree pointer is compile time(early), new keyword is run-time (late)
+   </li>
+   <li>
+    no such thing as a virtual constructor
+   </li>
+   <li>
+    late binding: runtime
+   </li>
+   <li>
+    early binding: compile time
+   </li>
+   <li>
+    AVL Tree is a Binary Tree
+   </li>
+   <li>
+    a Red Black tree is a BST
+   </li>
+   <li>
+    in .h file of derived class:
+    <strong>
+     class BinarySearchTree : public BinaryTree
+    </strong>
+   </li>
+   <li>
+    constructors are not inherited and cannot be virtual
+   </li>
+   <li>
+    both constructors are written and called, base class is called first, derived class is called second
+   </li>
+   <li>
+    destructors can be inherited and C++ will insist that the base class destructor is virtual, and both are called when the object goes out of scope
+   </li>
+   <li>
+    BST destructor first, BT destructor second (derived, then base)
+   </li>
+  </ul>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/highlight.min.js">
+  </script>
+  <script>
+   hljs.initHighlightingOnLoad();
+  </script>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   MathJax.Hub.Config({"showProcessingMessages" : false,"messageStyle" : "none","tex2jax": { inlineMath: [ [ "$", "$" ] ] }});
+  </script>
+ </body>
+</html>
