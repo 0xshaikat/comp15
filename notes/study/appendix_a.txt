@@ -1,0 +1,426 @@
+a)
+// ARRAYLIST IMPLEMENTATION
+//ArrayList::expand()
+//Purpose: expand array if length >= tmp_c
+//Parameters: none
+//Returns: nothing
+void ArrayList::expand()
+{
+  //if length is greater than capacity
+  if (length >= tmp_c)
+    {
+      //declare new pointer
+      Pirate *s;
+      //set the new array
+      s =  new Pirate[tmp_c *= 2];
+      //cout to output.txt
+      cout << "Expand to 200" << endl;
+      //copy contents of array
+      for (int i = 0; i < length; i++)
+        {
+          s[i] = pirates[i];
+        }//end for
+
+      //delete pirates array and point pirates array
+      delete []pirates;
+      //set pointer
+      pirates = s;
+    }//end if
+}//end expand
+
+//ArrayList::shrink()
+//Purpose: shrink array if length is less than twice tmp_c
+//Parameters: none
+//Returns: nothing
+void ArrayList::shrink()
+{
+  //if length is less than tmp_c/2
+  if (length < (tmp_c/2))
+    {
+      //print to ostream
+      cout << "Contract to 50" << endl;
+      //declare new pointer
+      Pirate *s;
+      //allocate lower amount of memory
+      s = new Pirate[tmp_c/=2];
+      //copy contents of array
+      for (int i = 0; i < length; i++)
+        {
+          s[i] = pirates[i];
+        }//end for
+
+      //delete pirates array and point pirates array to s
+      delete []pirates;
+      pirates = s;
+    }//end if
+}//end shrink
+// LINKEDLIST IMPLEMENTATION
+// Function find_planet
+// Inputs: Planet object, boolean reference
+// Returns: Planet object
+Planet LinkedList::find_planet(Planet p, bool &b)
+{
+  NodeType *tmp = head;
+  //so long as the LL is not empty/null, traverse
+  while (tmp != NULL)
+    {
+      if (tmp->info == p)
+        {
+          b = true;
+          return p;
+        }//end if
+      else
+        {
+          tmp = tmp->next;
+        }//end else
+    }//end while
+  b = false;
+  return p;
+}//end find_planet
+
+// Function delete_planet
+// Inputs: Planet object
+// Returns: void
+void LinkedList::delete_planet(Planet p)
+{
+  bool found;
+
+  Planet p_delete;
+  p_delete = find_planet(p, found);
+  if (found)
+    {
+      NodeType *prev;
+      NodeType *curr;
+      curr = head;
+      //traverse array and get position of found planet
+      while(curr->info != p_delete)
+        {
+          prev = curr;
+          curr = curr->next;
+        }
+      //three cases
+      //@head
+      if (curr->info == head->info)
+        {
+          NodeType *tmp;
+          tmp = head;
+          head = head->next;
+          delete tmp;
+        }//end if
+      //@any position
+      else if (curr->next != NULL)
+        {
+          prev->next = curr->next;
+        }//end else if
+      //@tail
+      else
+        {
+          prev->next = NULL;
+          delete curr;
+        }//end else
+      length--;
+    }//end if
+}//end delete_planet
+
+b)
+//COPY CONSTRUCTOR AND ASSIGNMENT OPERATOR EXAMPLES
+
+//LinkedList:
+// Copy Constructor
+LinkedList::LinkedList(const LinkedList &l)
+{
+  //copy attributes
+  length = l.length;
+  curr_pos = NULL;
+  //check if head is NULL
+  if (l.head == NULL)
+    {
+      head = NULL;
+    }
+  else
+    {
+      head = new NodeType;
+      head->info = l.head->info;
+      head->next = NULL;
+      NodeType *curr = head;
+      NodeType *orig = l.head;
+      //traverse array/deep copy
+      while (orig->next != NULL)
+        {
+          curr->next = new NodeType;
+          curr->next->info = orig->next->info;
+          curr->next->next = NULL;
+          orig = orig->next;
+          curr = curr->next;
+        }//end while
+    }//end if
+}//end copy const
+
+// Assignment operator
+LinkedList & LinkedList::operator = (const LinkedList &l)
+{
+    NodeType *temp;
+    while (head != NULL)
+    {
+        temp = head;
+        head = head->next;
+        delete temp;
+    }
+    length = l.length;
+    curr_pos = NULL;
+    if (l.head == NULL)
+        head = NULL;
+    else
+    {
+        head = new NodeType;
+        head->info = l.head->info;
+        head->next = NULL;
+        NodeType *curr = head;
+        NodeType *orig = l.head;
+        while (orig->next != NULL)
+        {
+            curr->next = new NodeType;
+            curr->next->info = orig->next->info;
+            curr->next->next = NULL;
+            orig = orig->next;
+            curr = curr->next;
+        }
+    }
+    return *this;
+}
+
+//STACK:
+//copy constructor
+Stack::Stack(const Stack &s)
+{
+  //copy attributes
+  size = s.size;
+  curr_pos = NULL;
+  //check if head is NULL
+  if (s.head == NULL)
+    {
+      head = NULL;
+    }
+  else
+    {
+      head = new Node;
+      head->value = s.head->value;
+      head->next = NULL;
+      Node *curr = head;
+      Node *orig = s.head;
+      //traverse array/deep copy
+      while (orig->next != NULL)
+        {
+          curr->next = new Node;
+          curr->next->value = orig->next->value;
+          curr->next->next = NULL;
+          orig = orig->next;
+          curr = curr->next;
+        }//end while
+    }//end if
+}//end copy constructor
+
+//assignment operator
+Stack & Stack::operator = (const Stack &s)
+{
+  Node *temp;
+  while (head != NULL)
+    {
+      temp = head;
+      head = head->next;
+      delete temp;
+    }
+  size = s.size;
+  curr_pos = NULL;
+  if (s.head == NULL)
+    head = NULL;
+  else
+    {
+      head = new Node;
+      head->value = s.head->value;
+      head->next = NULL;
+      Node *curr = head;
+      Node *orig = s.head;
+      while (orig->next != NULL)
+        {
+          curr->next = new Node;
+          curr->next->value = orig->next->value;
+          curr->next->next = NULL;
+          orig = orig->next;
+          curr = curr->next;
+        }
+    }
+  return *this;
+}//end assignment operator
+
+//BINARYTREE:
+// Copy Constructor
+BinaryTree::BinaryTree(const BinaryTree &b)
+{
+    //if root is null, copy constructor
+    if (b.root ==  NULL)
+    {
+        root = NULL;
+    }//end if
+    //traverse binary tree and make copy pre-order
+    else
+    {
+        root = copy_tree(b.root);
+    }//end else
+}//end copy constructor
+
+// Assignment Operator
+BinaryTree & BinaryTree::operator = (const BinaryTree &b)
+{
+    // self-assignment check
+    if (this != &b)
+    {
+        // delete if it already exists
+        destroy(root);
+    }
+    // copy tree
+    root = copy_tree(b.root);
+    // return this
+    return *this;
+}//end assignment operator
+
+// Function copy_tree(wrapper)
+// Params: Original BinaryNode *
+// Returns: void
+// Copies tree for constructor
+BinaryNode * copy_tree(BinaryNode *node)
+{
+    //check for NULL
+    if (node == NULL)
+    {
+        return NULL;
+    }//end if
+    else
+    {
+        //copies data to new node pre_order
+        BinaryNode *new_node = new BinaryNode();
+        new_node->info = node->info;
+        new_node->left = copy_tree(node->left);
+        new_node->right = copy_tree(node->right);
+        return new_node;
+    }//end else
+}//end copy_tree
+
+c)
+//BST CODE SAMPLE
+// Function to find item in a BST
+// Throws exception if empty
+// Calls wrapper function for recursion
+void BinarySearchTree::find_item(TreeItem &item, bool &b) const
+{
+    if (is_empty())
+    {
+        throw EmptyTree();
+    }//end if
+    else
+    {
+        find_item_bst(root, item, b);
+    }//end else
+}//end find_item
+
+// Wrapper function for insert
+void insert_bst(BinaryNode *&tree, TreeItem item)
+{
+    //make root the item
+    if (tree == NULL)
+    {
+        tree = new BinaryNode; // this part is why pass by ref
+        tree->right = NULL;
+        tree->left = NULL;
+        tree->info = item;
+    }//end if
+    //insert to left
+    else if (item < tree->info)
+    {
+        insert_bst(tree->left, item);
+    }//end else if
+    //insert to right
+    else if (item > tree->info)
+    {
+        insert_bst(tree->right, item);
+    }//end else if
+}// end insert_bst
+
+// Wrapper function for remove
+BinaryNode * remove_item_bst(BinaryNode *&tree, TreeItem item)
+{
+    //return NULL if item to remove is root
+    if (tree == NULL)
+    {
+        return NULL;
+    }//end if
+    //CASE ONE: 0 or 2 children
+    //subcase one: less than root
+    if (item < tree->info)
+    {
+        tree->left = remove_item_bst(tree->left, item);
+    }//end if
+    //subcase two: greater than root
+    else if (item > tree->info)
+    {
+        tree->right = remove_item_bst(tree->right, item);
+    }//end else if
+    //CASE TWO: one of children is NULL
+    else
+    {
+        if (tree->left == NULL)
+        {
+            BinaryNode *temp = tree->right;
+            delete tree;
+            return temp;
+        }// end if
+        else if (tree->right == NULL)
+        {
+            BinaryNode *temp = tree->left;
+            delete tree;
+            return temp;
+        }// end else if
+        // recursively remove based on predecessor
+        BinaryNode *temp = find_minimum_bst(tree->right);
+        tree->info = temp->info;
+        tree->right = remove_item_bst(tree->right, temp->info);
+    }//end else
+    return tree;
+}//end remove_item_bst
+
+// Wrapper function for find_minimum
+BinaryNode * find_minimum_bst(BinaryNode *& tree)
+{
+    if (tree == NULL)
+    {
+        return tree;
+    }//end if
+    if (tree->left != NULL)
+    {
+        return find_minimum_bst(tree->left);
+    }//end if
+    return tree;
+}//end find_minimum_bst
+
+// Wrapper function for find_item
+void find_item_bst(BinaryNode *tree, TreeItem &item, bool &b)
+{
+    if (tree == NULL)
+    {
+        b = false;
+        return;
+    }//end if
+    if (tree->info == item)
+    {
+        b = true;
+        return;
+    }
+    if (tree->info < item)
+    {
+        find_item_bst(tree->right, item, b);
+    }//end if
+    else
+    {
+        find_item_bst(tree->left, item, b);
+    }//end else
+}//end find_item_bst

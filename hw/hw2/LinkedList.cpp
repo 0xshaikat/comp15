@@ -2,7 +2,7 @@
  * LinkedList.cpp
  * COMP15
  * Spring 2018
- * 
+ *
  * Implementation for Linked List of Planets
  *
  * What is an astronaut's favorite candy bar?
@@ -70,7 +70,7 @@ LinkedList & LinkedList::operator = (const LinkedList &l)
     NodeType *temp;
     while (head != NULL)
     {
-        temp = head; 
+        temp = head;
         head = head->next;
         delete temp;
     }
