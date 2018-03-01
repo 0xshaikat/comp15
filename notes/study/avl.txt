@@ -1,0 +1,3 @@
+read these two links and you should be fine:
+https://www.geeksforgeeks.org/avl-tree-set-1-insertion/
+https://www.geeksforgeeks.org/avl-tree-set-2-deletion/
