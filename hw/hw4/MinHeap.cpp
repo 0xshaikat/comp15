@@ -19,6 +19,11 @@ template <class E> MinHeap<E>::~MinHeap()
 {
 }
 
+//heapify_up
+//Params: int
+//Returns: void
+//Purpose: takes element at given index i and determines
+//whether it should keep moving up in the heap to preserve balance
 template <class E> void MinHeap<E>::heapify_up(int i)
 {
     int p = this->get_parent_index(i);
@@ -43,6 +48,11 @@ template <class E> void MinHeap<E>::heapify_up(int i)
     }
 }
 
+//heapify_down
+//Params: int
+//Returns: void
+//Purpose: takes element at given index in heap and determines
+//whether to keep moving down in order to preserve the balance.
 template <class E> void MinHeap<E>::heapify_down(int i)
 {
     int c1, c2;

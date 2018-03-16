@@ -107,6 +107,11 @@ ostream & operator << (ostream &out, const Patient &p)
     return out;
 }
 
+//calculate_priority
+//Params: bool, bool, double, unsigned, int, bool
+//Returns: void
+//Purpose: Sets patients attribute to the input and assigns a value
+//for the priority attribute.
 void Patient::calculate_priority(bool cp, bool hw, double t, unsigned p,
                                  int a, bool ph)
 {
@@ -164,11 +169,19 @@ void Patient::calculate_priority(bool cp, bool hw, double t, unsigned p,
     }
 }
 
+//get_time
+//Params: none
+//Returns: int
+//Purpose: returns time_in
 int Patient::get_time() const
 {
     return time_in;
 }
 
+//find_early
+//Params: Patient, Patient
+//Returns: bool
+//Purpose: determines which patient arrives first
 bool Patient::find_early(Patient one, Patient two) const
 {
     if (one.get_time() < two.get_time())

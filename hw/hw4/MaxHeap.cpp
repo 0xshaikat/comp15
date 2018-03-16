@@ -21,6 +21,11 @@ template <class E> MaxHeap<E>::~MaxHeap()
 
 }
 
+//heapify_up
+//Params: int
+//Returns: void
+//Purpose: takes element in given index of heap and determines
+//whether to keep moving itself in order to balance the heap.
 template <class E> void MaxHeap<E>::heapify_up(int i)
 {
     int p = this->get_parent_index(i);
@@ -44,7 +49,11 @@ template <class E> void MaxHeap<E>::heapify_up(int i)
         heapify_up(p);
     }
 }
-
+//heapify_down
+//Params: int
+//Return: void
+//Purpose: takes element in given index of heap and determines
+// whether or not to keep moving down in order to preserve balance.
 template <class E> void MaxHeap<E>::heapify_down(int i)
 {
     int c1, c2;
