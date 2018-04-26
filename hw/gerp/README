@@ -1,0 +1,40 @@
+========================
+PURPOSE
+========================
+The purpose of this program is to create a similar program to the in line command program 'grep', which provides the ability to index directories within a Unix architecture.
+
+Matches for a query are provided if a query is found within a .txt file within a directory; otherwise, nothing is returned but a message reading "query not found".
+
+The directory architecture is analyzed and traversed, while the query is being searched within.
+
+usage: ./gerp directory
+
+========================
+ACKNOWLEDGEMENTS
+========================
+stackoverflow.com (for various debugging and data structure questions)
+piazza.com (for debugging and spec related questions)
+Office Hours for COMP15
+
+========================
+FILES
+========================
+LinkedHashNode.cpp - provides the structure for the base Nodes for a chained LinkedHashMap
+LinkedHashNode.h - header file for LinkedHashNode.cpp
+HashMap.cpp - structure of a chained HashMap, which uses a Linked List structure
+HashMap.h - header file for HashMap.cpp
+gerp-driver.cpp - location of main, where the program runs and the files are indexable
+Makefile - links all of the above into one compiler command
+hash-test.cpp - test file for HashMap data structure
+
+========================
+OUTLINE
+========================
+This program relies on a combination of a Vector<String> and a HashMap data structure in order to traverse and index directories and search for queries. Much of the file processing and string processing is done within gerp-driver.cpp, where various functions such as preorder_fill, string_manipulator, lowercase, process_string, and invalid_character are used in order to fill a HashMap and traverse a directory, as well as process strings for queries.
+
+Furthermore, within the main function in gerp-driver.cpp, the structure of the program is written using control statements such conditions and while loops. Once a query is found, it is printed, as well as the line number and file. If no query is found, "query not found" is printed to the console and the program resets until the user quits.
+
+The main algorithm for this program was written in the query function in gerp-driver.cpp. Depending on whether a query is case in/sensitive, a HashMap and Vector is indexed with the files from the respective directory. A stringstream object is used to parse text from where the query is found, and the line number and file name is saved in order to cout to console.
+
+The HashMap class was tested in hash-test.cpp and can be tested using make hashtest.
+

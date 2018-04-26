@@ -73,6 +73,10 @@ int main(int argc, char *argv[])
     cout << "Goodbye! Thank you and have a nice day!\n";
 }// end main
 
+//query
+//Purpose: search within a directory for a string
+//Returns: void
+//Parameters: string, string, bool
 void query(string dir, string search, bool b)
 {
     //fill vector for files to check for search term
@@ -146,6 +150,10 @@ void query(string dir, string search, bool b)
 }// end query
 
 //==STRING PROCESSING===========================================================
+//string_manipulator
+//Purpose: process strings and remove trailing and leading non-alphanumeric char
+//Returns: string
+//Parameters: string
 string string_manipulator(string s, bool &b)
 {
     size_t found_a = s.find("@i");
@@ -177,6 +185,10 @@ string string_manipulator(string s, bool &b)
     return result;
 }// end string_manipulator
 
+//lowercase
+//Purpose: convert a string to lowercase
+//Returns: string
+//Parameters: string
 string lowercase(string s)
 {
     locale loc;
